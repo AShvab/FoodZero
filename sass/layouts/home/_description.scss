@@ -1,0 +1,81 @@
+.description {
+    padding-bottom: 190px;
+    padding-top: 207px;
+    padding-right: 138px;
+    padding-left: 138px;
+}
+
+.description-list {
+      display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.description-list-item {
+    width: calc((100% - 120px) / 3);
+}
+.description-list-item::before {
+    content: '';
+    width: 260px;
+    height: 260px;
+    background-color: #EBF0E4;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 39px;
+}
+
+.description-list-item:nth-child(1):before {
+    background-image: url('../images/description/Icon_fish@1x.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/description/Icon_fish@2x.png');
+      }
+    }
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.description-list-item:nth-child(2):before {
+    background-image: url('../images/description/Icon_carrot@1x.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/description/Icon_carrot@2x.png');
+      }
+    }
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.description-list-item:nth-child(3):before {
+    background-image: url('../images/description/Icon_lemon@1x.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/description/Icon_lemon@2x.png');
+      }
+    }
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.description-list-uptitle {
+    font-family: 'Rufina', serif;
+    font-size: 48px;
+    line-height: calc(64 / 48);
+    text-align: center;
+    margin-bottom: 39px;
+}
+
+.description-list-text {
+ font-size: 24px;
+ line-height: calc(34 / 24);
+ letter-spacing: 0.02em;
+ text-align: center;
+ color: #4D4D4D;
+}

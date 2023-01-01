@@ -1,0 +1,20 @@
+
+@import './base/vars';
+@import './base/reset';
+@import './utils/hidden';
+@import './utils/mixins';
+@import './base/common';
+@import './components/container';
+@import './components/title';
+
+@import './layouts/home/hero';
+@import './layouts/home/header';
+@import './layouts/home/menu';
+@import './layouts/home/about';
+@import './layouts/home/description';
+@import './layouts/home/blog';
+@import './layouts/home/reservation';
+@import './layouts/home/portfolio';
+@import './layouts/home/review';
+@import './layouts/home/footer';
+
