@@ -57,7 +57,9 @@
 .hero-scroll::after {
 content: '';
 width: 406px;
-border: 2px dashed #ffffff;
+border-bottom: 2px dashed #ffffff;
+
+
 padding-right: 149px;
 }
 

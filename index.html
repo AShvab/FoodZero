@@ -18,17 +18,128 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <header>
+    <header class="header">
       <nav class="header-nav">
         <div class="container header-container">
-          <a class="heder-logo" href=""></a>
-          <button class="burger-menu"></button>
-          <a class="header-tel" href="#"></a>
-          <button class="header-button" type="button"></button>
+          
+          <a class="heder-logo" href="./index.html">
+            <picture>
+              <source
+              srcset="./images/logo/white/Logo@1x.png 1x, ./images/logo/white/Logo@2x.png 2x"
+              media="(min-width:1950px)"
+            />
+            <img src="./images/logo/white/Logo@1x.png" alt="logo" width="307"
+            height="115" class="header-logo" >
+            </picture>
+          </a>
+        
+          <button type="button-menu" class="menu-open">
+            <picture>
+              <source
+              srcset="./images/burger-menu/NaviOpen@1x.png 1x, ./images/burger-menu/NaviOpen@2x.png 2x"
+              media="(min-width:1950px)"
+            />
+            <img src="./images/burger-menu/NaviOpen@1x.png" alt="cooked meat on white plate" width="94"
+            height="71" class="burger-menu" >
+            </picture>
+          </button>
+
+          <a class="header-tel" href="tel:+86852346000">
+            +86 852 346 000</a
+          >
+
+          <button class="header-button btn" type="button" data-modal-open>Reservations</button>
         </div>
       </nav>
+
+      <!-- <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">          
+            <button type="button" class="menu-close" data-menu-close>
+            <svg class="menu-close-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-close_menu"></use>
+            </svg>
+          </button>
+
+          <ul class="menu-list">
+            <li></li>
+            <li class="menu-list-item">
+              <a class="menu-list-link current" href="./index.html">Студія</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mob-menu-bottom">
+          <ul class="mob-contacts">
+            <li class="mob-contacts-item">
+              <a class="mob-contacts-tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-contacts-item">
+              <a class="mob-contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="menu-soc">
+            <li class="menu-soc-item">
+              <a
+                class="menu-soc-link"
+                href="#"
+                target="_blank"
+                rel="norefferer noopener"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a
+                class="menu-soc-link"
+                href="#"
+                target="_blank"
+                rel="norefferer noopener"
+              >
+                Twitter
+              </a>
+            </li>
+            <li class="menu-soc-item">
+              <a
+                class="menu-soc-link"
+                href="#"
+                target="_blank"
+                rel="norefferer noopener"
+              >
+                Facebook
+              </a>
+            </li>
+            <li class="mob-soc__item">
+              <a
+                class="mob-soc-link"
+                href="#"
+                target="_blank"
+                rel="norefferer noopener"
+              >
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        </div>
+      </div> -->
     </header>
     <main>
+
+
+      <!-- section hero -->
       <section class="hero">
         <div class="container hero-container">
           <div class="hero-wrapper-box">
@@ -49,7 +160,7 @@
            
             <picture>
               <source
-                srcset="./images/hero/Image1@1x.jpg 1x, ./images/im/hero/Image1@2x.jpg 2x"
+                srcset="./images/hero/Image1@1x.jpg 1x, ./images/hero/Image1@2x.jpg 2x"
                 media="(min-width:1950px)"
               />
 
@@ -73,7 +184,7 @@
 
             <picture>
               <source
-                srcset="./images/hero/Image2@1x.jpg 1x, ./images/im/hero/Image2@2x.jpg 2x"
+                srcset="./images/hero/Image2@1x.jpg 1x, ./images/hero/Image2@2x.jpg 2x"
                 media="(min-width:1950px)"
               />
 
@@ -93,7 +204,7 @@
             </p>
             <picture>
               <source
-                srcset="./images/hero/Image3@1x.jpg 1x, ./images/im/hero/Image3@2x.jpg 2x"
+                srcset="./images/hero/Image3@1x.jpg 1x, ./images/hero/Image3@2x.jpg 2x"
                 media="(min-width:1950px)"
               />
 
@@ -103,49 +214,65 @@
 
           </div>      
         </div>
-          </div>
-        
+          </div>        
       </section>
 
-      <section class="menu">
-        <div class="container menu-container">
-          <h2 class="menu-title title">Our Menu</h2>
-          <p class="menu-text">
+      <!-- section prices -->
+      <section class="prices">
+        <div class="container prices-container">
+          <h2 class="prices-title title">Our Menu</h2>
+          <p class="prices-text">
             This is a section of your menu. Give your section a brief
             description
           </p>
-          <ul class="menu-list list">
-            <li class="menu-list-item">
-              <h3 class="menu-list-uptitle">
+          
+          <ul class="prices-list list">
+            <li class="prices-list-item">
+              <span class="prices-list-point">$20</span>
+              
+              <h3 class="prices-list-uptitle">
                 Deep Sea Snow White Cod Fillet
               </h3>
-              <p class="menu-list-text">
+              <p class="prices-list-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </li>
-            <li class="menu-list-item">
-              <h3 class="menu-list-uptitle">Steak With Rosemary Butter</h3>
-              <p class="menu-list-text">
+            <li class="prices-list-item">
+              <span class="prices-list-point">$22</span>
+              <h3 class="prices-list-uptitle">Steak With Rosemary Butter</h3>
+              <p class="prices-list-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </li>
-            <li class="menu-list-item">
-              <h3 class="menu-list-uptitle">Cucumber Salad</h3>
-              <p class="menu-list-text">
+            <li class="prices-list-item">
+              <span class="prices-list-point">$18</span>
+              <h3 class="prices-list-uptitle">Cucumber Salad</h3>
+              <p class="prices-list-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </li>
-            <li class="menu-list-item">
-              <h3 class="menu-list-uptitle">Natural Wine Pairing</h3>
-              <p class="menu-list-text">
+            <li class="prices-list-item">
+              <span class="prices-list-point">$90</span>
+              <h3 class="prices-list-uptitle">Natural Wine Pairing</h3>
+              <p class="prices-list-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
             </li>
           </ul>
         </div>
       </section>
+
+      <!-- section about -->
       <section class="about">
         <div class="container about-container">
+          <picture>
+            <source
+            srcset="./images/about/leaf_top@1x.png 1x, ./images/about/leaf_top@2x.png 2x"
+            media="(min-width:1950px)"
+          />
+          <img src="./images/about/leaf_top@1x.png" alt="cooked meat on white plate" width="365"
+          height="372" class="leaf-top" >
+          </picture>
           <div class="about-wrapper-image"></div>
           <div class="about-wrapper-text">
             <h2 class="about-title title">Excellent cook</h2>
@@ -154,11 +281,22 @@
               id penatibus imperdiet. Turpis egestas ultricies purus auctor
               tincidunt lacus nunc.
             </p>
+            <picture>
+              <source
+              srcset="./images/about/Leaf@1x.png 1x, ./images/about/Leaf@2x.png 2x"
+              media="(min-width:1950px)"
+            />
+            <img src="./images/about/Leaf@1x.png" alt="cooked meat on white plate" width="456"
+            height="464" class="leaf-bottom" >
+            </picture>
           </div>
+
+
 
         </div>
       </section>
 
+      <!-- section description -->
       <section class="description">
         <div class="container description-container">
           <h2 class="description-subtitle hidden">description</h2>
@@ -220,22 +358,79 @@
 
       <section class="portfolio">
         <div class="container portfolio-container">
-          <h2 class="portfolio-title">Calories Energy Balance</h2>
+          <h2 class="portfolio-title title">Calories Energy Balance</h2>
           <p class="portfolio-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
-              <span>Starters</span>
-              <img src="" alt="" />
+              <div class="portfolio-item-wrapper">
+                <div class="wrapper-icon">
+                  <span class="dishes">Starters</span>
+                  <button class="portfolio-button" type="button">
+                    <svg class="arrow-right">
+                      <use  href="./images/icons.svg#icon-arrow-right" width="48" height="28"></use>
+                    </svg>
+                  </button>
+
+                </div>
+
+                <picture>
+                  <source
+                  srcset="./images/portfolio/Image1@1x.jpg 1x, ./images/portfolio/Image1@2x.jpg 2x"
+                  media="(min-width:1950px)"
+                />
+                <img src="./images/portfolio/Image1@1x.jpg" alt="starter" width="508"
+                height="710" class="portfolio-item-picture" >
+                </picture>
+              </div>
+
             </li>
             <li class="portfolio-list-item">
-              <span>Mains</span>
-              <img src="" alt="" />
+              <div class="portfolio-item-wrapper">
+                <div class="wrapper-icon">
+                  <span class="dishes">Mains</span>
+                  <button class="portfolio-button" type="button">
+                    <svg class="arrow-right">
+                      <use  href="./images/icons.svg#icon-arrow-right" width="48" height="28"></use>
+                    </svg>
+                  </button>
+
+                </div>
+
+                <picture>
+                  <source
+                  srcset="./images/portfolio/Image2@1x.jpg 1x, ./images/portfolio/Image2@2x.jpg 2x"
+                  media="(min-width:1950px)"
+                />
+                <img src="./images/portfolio/Image2@1x.jpg" alt="main" width="508"
+                height="710" class="portfolio-item-picture" >
+                </picture>
+              </div>
+
             </li>
             <li class="portfolio-list-item">
-              <span>Soups</span>
-              <img src="" alt="" />
+              <div class="portfolio-item-wrapper">
+                <div class="wrapper-icon">
+                  <span class="dishes">Soups</span>
+                  <button class="portfolio-button" type="button">
+                    <svg class="arrow-right">
+                      <use  href="./images/icons.svg#icon-arrow-right" width="48" height="28"></use>
+                    </svg>
+                  </button>
+
+                </div>
+
+                <picture>
+                  <source
+                  srcset="./images/portfolio/Image3@1x.jpg 1x, ./images/portfolio/Image3@2x.jpg 2x"
+                  media="(min-width:1950px)"
+                />
+                <img src="./images/portfolio/Image3@1x.jpg" alt="soup" width="508"
+                height="710" class="portfolio-item-picture" >
+                </picture>
+              </div>
+
             </li>
           </ul>
         </div>
@@ -278,5 +473,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
