@@ -1,0 +1,35 @@
+.reservation {
+    background-color: #EBF0E4;
+    padding-top: 237px;
+    padding-bottom: 254px;
+}
+
+.reservation-title {
+text-align: center;
+    font-size: 108px;
+    line-height: calc(120 / 108);
+    margin-bottom: 18px;
+}
+
+.reservation-text {
+    text-align: center;
+    font-size: 24px;
+    line-height: calc(34 / 24);
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    margin-bottom: 133px;
+
+}
+
+.reservation-btn {
+    font-family: 'Rufina', serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(48 / 32);
+    color: var(--secondary-text-color);
+    background-color: #233000;
+    border: 2px solid #000000;
+    padding: 20px 94px;
+    display: block;
+    margin: 0 auto;
+}

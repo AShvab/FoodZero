@@ -1,5 +1,6 @@
 :root {
   --primary-text-color: #4d4d4d;
+  --secondary-text-color: #ffffff;
   --primary-title-color: #000000;
 }
 
@@ -511,6 +512,31 @@ body {
   padding-right: 75px;
 }
 
+.blog-group-wrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.blog-group {
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #5E6600;
+  position: relative;
+}
+
+.blog-group:not(:last-child):after {
+  content: "";
+  background-color: #5E6600;
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  position: absolute;
+  right: -16px;
+  top: 50%;
+}
+
 .blog-list-uptitle {
   font-family: "Rufina", serif;
   font-weight: 700;
@@ -519,6 +545,18 @@ body {
   color: var(--primary-title-color);
   margin-top: 48px;
   margin-bottom: 36px;
+  display: block;
+  position: relative;
+}
+
+.blog-list-uptitle::after {
+  content: "";
+  display: flex;
+  border-bottom: 4px dashed #000000;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  width: 100%;
 }
 
 .blog-list-text {
@@ -544,6 +582,41 @@ body {
 
 .blog-arrow {
   fill: #5E6600;
+}
+
+.reservation {
+  background-color: #EBF0E4;
+  padding-top: 237px;
+  padding-bottom: 254px;
+}
+
+.reservation-title {
+  text-align: center;
+  font-size: 108px;
+  line-height: 1.1111111111;
+  margin-bottom: 18px;
+}
+
+.reservation-text {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.4166666667;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  margin-bottom: 133px;
+}
+
+.reservation-btn {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+  background-color: #233000;
+  border: 2px solid #000000;
+  padding: 20px 94px;
+  display: block;
+  margin: 0 auto;
 }
 
 .portfolio-container {

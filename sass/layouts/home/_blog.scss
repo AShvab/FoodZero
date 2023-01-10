@@ -38,6 +38,32 @@
     padding-right: 75px;
 }
 
+.blog-group-wrapper {
+    display: flex;
+    gap: 32px;
+}
+
+.blog-group {
+    
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: #5E6600;
+    position: relative;
+}
+.blog-group:not(:last-child):after {
+    content: '';
+    background-color: #5E6600;
+    display: block;
+ 
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    right: -16px;
+    top: 50%;
+}
+
 .blog-list-uptitle {
     font-family: 'Rufina', serif; 
     font-weight: 700;
@@ -46,7 +72,24 @@
     color: var(--primary-title-color);
     margin-top: 48px;
     margin-bottom: 36px;
+   
+    display: block;
+    position: relative;
+    
 }
+
+.blog-list-uptitle::after {
+    content: '';
+    display: flex;
+    
+    border-bottom: 4px dashed  #000000;
+    
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    width: 100%;
+}
+
 
 .blog-list-text {
     font-weight: 700;
