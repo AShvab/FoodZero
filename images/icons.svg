@@ -24,5 +24,8 @@
     <symbol id="icon-NaviOpen" viewBox="0 0 42 32">
       <path stroke-width=".901" d="M10.817 9.465h20.732M10.817 15.775h20.732M10.817 22.084h20.732"/>
     </symbol>
+<symbol id="icon-angle-down" viewBox="0 0 56 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M3 3l25 25 25-25"></path>
+</symbol>
   </defs>
 </svg>
