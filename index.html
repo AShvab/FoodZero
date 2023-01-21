@@ -653,12 +653,28 @@
 
       <section class="review">
         <div class="container review-container">
-          <h2 class="review-title is-hidden">review</h2>
+          <h2 class="review-title hidden">review</h2>
           <p class="review-text">
             “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
             lorem id penatibus imperdiet. Turpis egestas ultricies purus Lorem
             ipsum dolor sit amet.
           </p>
+          <picture>
+            <source
+              srcset="
+                ./images/review/Avatar@1x-min.png 1x,
+                ./images/review/Avatar@2x-min.png 2x
+              "
+              media="(min-width:1950px)"
+            />
+            <img
+              src="./images/review/Avatar@1x-min.png"
+              alt="avatar"
+              width="170"
+              height="170"
+              class="review-avatar"
+            />
+          </picture>
           <h3 class="review-subtitle">John Doe</h3>
           <p class="review-text"></p>
         </div>
@@ -666,7 +682,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <h2 class="footer-title">Food Zero.</h2>
+        <h2 class="footer-title title">Food Zero.</h2>
         <address>
           <h3>Contact</h3>
           <a href="">+1+86 852 346 000</a>

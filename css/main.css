@@ -720,4 +720,31 @@ body {
 .arrow-right {
   width: 48px;
   height: 28px;
+}
+
+.review-container {
+  padding-top: 118px;
+  padding-bottom: 156px;
+  padding-left: 246px;
+}
+
+.review-text {
+  width: 1262px;
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.3333333333;
+  color: #000000;
+}
+
+.footer {
+  background-color: #233000;
+  padding-top: 132px;
+  padding-bottom: 74px;
+}
+
+.footer-title {
+  font-size: 68px;
+  line-height: 1.2352941176;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
