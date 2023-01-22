@@ -76,10 +76,12 @@ body {
 
 .title {
   font-family: "Rufina", serif;
+  font-weight: 700;
 }
 
 .subtitle {
   font-family: "Rufina", serif;
+  font-weight: 700;
 }
 
 .hero {
@@ -735,6 +737,18 @@ body {
   font-size: 48px;
   line-height: 1.3333333333;
   color: #000000;
+}
+
+.review-subtitle {
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.review-subtitle-text {
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+  color: #4d4d4d;
 }
 
 .footer {
